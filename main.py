@@ -31,7 +31,7 @@ class YellowCircle(QMainWindow):
     def draw(self, qp):
 
 
-        qp.setBrush(QColor(255, 0, 0))
+        qp.setBrush(QColor(255, 255, 0))
         size = random.randint(1, 300)
         qp.drawEllipse(100, 100, size, size)
 
