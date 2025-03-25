@@ -1,0 +1,53 @@
+{% extends "base.html" %} {% block content %}
+<form>
+  <div>
+    <div>
+      <img src={{param}}>
+      <h1>Аварийный доступ</h1>
+    </div>
+    <label for="astronaut-id">Id астронавта</label>
+    <input
+      type="text"
+      class="form-control"
+      id="astronaut-id"
+      name="astronaut-id"
+    />
+  </div>
+  <div>
+    <label for="astronaut-pass">Пароль астронавта</label>
+    <input
+      type="text"
+      class="form-control"
+      id="astronaut-pass"
+      name="astronaut-pass"
+    />
+    <div>
+      <label for="astronaut-pass">Id капитана</label>
+      <input
+        type="text"
+        class="form-control"
+        id="captain-id"
+        name="captain-id"
+      />
+  </div>
+  <div>
+    <label for="astronaut-pass">Пароль капитана</label>
+    <input
+      type="text"
+      class="form-control"
+      id="captain-pass"
+      name="captain-pass"
+    />
+</div>
+    <div>
+    <submit for="astronaut-pass"></submit>
+    <input
+      type="submit"
+      class="btn btn-primary"
+      id="remember_me"
+      name="remember_me"
+    />
+</div>
+  </div>
+</form>
+{% endblock %}
